@@ -86,7 +86,7 @@ void loop() {
   delay(2000);
   Serial.println("I have gone right for two seconds!!!");
   carBackward(power);
-  delay(5000);UTFIDFfoyefrufasuuqefufuf
+  delay(5000);
   Serial.println("I have gone backward for five seconds!!!");
   Serial.println("VICTORY IS MINE!!!");
 }
