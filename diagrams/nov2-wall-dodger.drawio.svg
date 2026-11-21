@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="650" height="770" viewBox="210 0 650 770" content="&lt;mxfile host=&quot;app.diagrams.net&quot;&gt;
+  &lt;diagram name=&quot;Nov 2 - Wall Dodger&quot; id=&quot;Nov-2---Wall-Dodger&quot;&gt;
+    &lt;mxGraphModel grid=&quot;1&quot; gridSize=&quot;10&quot; guides=&quot;1&quot; tooltips=&quot;1&quot; connect=&quot;1&quot; arrows=&quot;1&quot; fold=&quot;1&quot; page=&quot;1&quot; pageScale=&quot;1&quot; pageWidth=&quot;850&quot; pageHeight=&quot;1100&quot; math=&quot;0&quot; shadow=&quot;0&quot;&gt;
+      &lt;root&gt;
+        &lt;mxCell id=&quot;0&quot; /&gt;
+        &lt;mxCell id=&quot;1&quot; parent=&quot;0&quot; /&gt;
+        &lt;mxCell id=&quot;start&quot; parent=&quot;1&quot; style=&quot;rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;&quot; value=&quot;START&amp;lt;br&amp;gt;(robot turns on)&quot; vertex=&quot;1&quot;&gt;
+          &lt;mxGeometry x=&quot;320&quot; y=&quot;20&quot; width=&quot;160&quot; height=&quot;60&quot; as=&quot;geometry&quot; /&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;setup&quot; parent=&quot;1&quot; style=&quot;rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;&quot; value=&quot;Get ready:&amp;lt;br&amp;gt;flash the lights&quot; vertex=&quot;1&quot;&gt;
+          &lt;mxGeometry x=&quot;300&quot; y=&quot;120&quot; width=&quot;200&quot; height=&quot;60&quot; as=&quot;geometry&quot; /&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;read&quot; parent=&quot;1&quot; style=&quot;rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;&quot; value=&quot;Look for fire&amp;lt;br&amp;gt;(only reports it,&amp;lt;br&amp;gt;doesn&#x27;t act yet)&quot; vertex=&quot;1&quot;&gt;
+          &lt;mxGeometry x=&quot;300&quot; y=&quot;220&quot; width=&quot;200&quot; height=&quot;60&quot; as=&quot;geometry&quot; /&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;wall&quot; parent=&quot;1&quot; style=&quot;rhombus;rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;&quot; value=&quot;Is something&amp;lt;br&amp;gt;closer than 10 cm?&quot; vertex=&quot;1&quot;&gt;
+          &lt;mxGeometry x=&quot;310&quot; y=&quot;320&quot; width=&quot;180&quot; height=&quot;130&quot; as=&quot;geometry&quot; /&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;fwd&quot; parent=&quot;1&quot; style=&quot;rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;&quot; value=&quot;Light off,&amp;lt;br&amp;gt;drive forward&quot; vertex=&quot;1&quot;&gt;
+          &lt;mxGeometry x=&quot;580&quot; y=&quot;355&quot; width=&quot;180&quot; height=&quot;60&quot; as=&quot;geometry&quot; /&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;keep&quot; parent=&quot;1&quot; style=&quot;rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;&quot; value=&quot;Keep driving for&amp;lt;br&amp;gt;a tenth of a second&quot; vertex=&quot;1&quot;&gt;
+          &lt;mxGeometry x=&quot;580&quot; y=&quot;460&quot; width=&quot;180&quot; height=&quot;50&quot; as=&quot;geometry&quot; /&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;red&quot; parent=&quot;1&quot; style=&quot;rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;&quot; value=&quot;Warning light!&amp;lt;br&amp;gt;Stop, wait 1 second&quot; vertex=&quot;1&quot;&gt;
+          &lt;mxGeometry x=&quot;310&quot; y=&quot;510&quot; width=&quot;180&quot; height=&quot;50&quot; as=&quot;geometry&quot; /&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;spin&quot; parent=&quot;1&quot; style=&quot;rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;&quot; value=&quot;Turn right for a&amp;lt;br&amp;gt;surprise amount of time&quot; vertex=&quot;1&quot;&gt;
+          &lt;mxGeometry x=&quot;300&quot; y=&quot;600&quot; width=&quot;200&quot; height=&quot;60&quot; as=&quot;geometry&quot; /&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;pause&quot; parent=&quot;1&quot; style=&quot;rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;&quot; value=&quot;Stop, wait&amp;lt;br&amp;gt;half a second&quot; vertex=&quot;1&quot;&gt;
+          &lt;mxGeometry x=&quot;320&quot; y=&quot;700&quot; width=&quot;160&quot; height=&quot;50&quot; as=&quot;geometry&quot; /&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;e1&quot; parent=&quot;1&quot; style=&quot;endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;&quot; value=&quot;&quot; edge=&quot;1&quot; source=&quot;start&quot; target=&quot;setup&quot;&gt;
+          &lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;&gt;
+            &lt;mxPoint x=&quot;400.0&quot; y=&quot;80&quot; as=&quot;sourcePoint&quot; /&gt;
+            &lt;mxPoint x=&quot;400.0&quot; y=&quot;120&quot; as=&quot;targetPoint&quot; /&gt;
+          &lt;/mxGeometry&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;e2&quot; parent=&quot;1&quot; style=&quot;endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;&quot; value=&quot;&quot; edge=&quot;1&quot; source=&quot;setup&quot; target=&quot;read&quot;&gt;
+          &lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;&gt;
+            &lt;mxPoint x=&quot;400.0&quot; y=&quot;180&quot; as=&quot;sourcePoint&quot; /&gt;
+            &lt;mxPoint x=&quot;400.0&quot; y=&quot;220&quot; as=&quot;targetPoint&quot; /&gt;
+          &lt;/mxGeometry&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;e3&quot; parent=&quot;1&quot; style=&quot;endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;&quot; value=&quot;&quot; edge=&quot;1&quot; source=&quot;read&quot; target=&quot;wall&quot;&gt;
+          &lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;&gt;
+            &lt;mxPoint x=&quot;400.0&quot; y=&quot;280&quot; as=&quot;sourcePoint&quot; /&gt;
+            &lt;mxPoint x=&quot;400.0&quot; y=&quot;320&quot; as=&quot;targetPoint&quot; /&gt;
+          &lt;/mxGeometry&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;e4&quot; parent=&quot;1&quot; style=&quot;endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;&quot; value=&quot;&quot; edge=&quot;1&quot; source=&quot;wall&quot; target=&quot;fwd&quot;&gt;
+          &lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;&gt;
+            &lt;mxPoint x=&quot;490&quot; y=&quot;385.0&quot; as=&quot;sourcePoint&quot; /&gt;
+            &lt;mxPoint x=&quot;580&quot; y=&quot;385.0&quot; as=&quot;targetPoint&quot; /&gt;
+          &lt;/mxGeometry&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;e4-label&quot; parent=&quot;e4&quot; vertex=&quot;1&quot; connectable=&quot;0&quot; style=&quot;edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;&quot; value=&quot;NO&quot;&gt;
+          &lt;mxGeometry x=&quot;0&quot; relative=&quot;1&quot; as=&quot;geometry&quot; /&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;e5&quot; parent=&quot;1&quot; style=&quot;endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;&quot; value=&quot;&quot; edge=&quot;1&quot; source=&quot;fwd&quot; target=&quot;keep&quot;&gt;
+          &lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;&gt;
+            &lt;mxPoint x=&quot;670.0&quot; y=&quot;415&quot; as=&quot;sourcePoint&quot; /&gt;
+            &lt;mxPoint x=&quot;670.0&quot; y=&quot;460&quot; as=&quot;targetPoint&quot; /&gt;
+          &lt;/mxGeometry&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;e6&quot; parent=&quot;1&quot; style=&quot;endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;&quot; value=&quot;&quot; edge=&quot;1&quot; source=&quot;keep&quot; target=&quot;read&quot;&gt;
+          &lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;&gt;
+            &lt;Array as=&quot;points&quot;&gt;
+              &lt;mxPoint x=&quot;840&quot; y=&quot;485&quot; /&gt;
+              &lt;mxPoint x=&quot;840&quot; y=&quot;250&quot; /&gt;
+            &lt;/Array&gt;
+            &lt;mxPoint x=&quot;760&quot; y=&quot;485.0&quot; as=&quot;sourcePoint&quot; /&gt;
+            &lt;mxPoint x=&quot;500&quot; y=&quot;250.0&quot; as=&quot;targetPoint&quot; /&gt;
+          &lt;/mxGeometry&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;e6-label&quot; parent=&quot;e6&quot; vertex=&quot;1&quot; connectable=&quot;0&quot; style=&quot;edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;&quot; value=&quot;start over&quot;&gt;
+          &lt;mxGeometry x=&quot;0.3&quot; relative=&quot;1&quot; as=&quot;geometry&quot; /&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;e7&quot; parent=&quot;1&quot; style=&quot;endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;&quot; value=&quot;&quot; edge=&quot;1&quot; source=&quot;wall&quot; target=&quot;red&quot;&gt;
+          &lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;&gt;
+            &lt;mxPoint x=&quot;400.0&quot; y=&quot;450&quot; as=&quot;sourcePoint&quot; /&gt;
+            &lt;mxPoint x=&quot;400.0&quot; y=&quot;510&quot; as=&quot;targetPoint&quot; /&gt;
+          &lt;/mxGeometry&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;e7-label&quot; parent=&quot;e7&quot; vertex=&quot;1&quot; connectable=&quot;0&quot; style=&quot;edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;&quot; value=&quot;YES&quot;&gt;
+          &lt;mxGeometry x=&quot;0&quot; relative=&quot;1&quot; as=&quot;geometry&quot; /&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;e8&quot; parent=&quot;1&quot; style=&quot;endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;&quot; value=&quot;&quot; edge=&quot;1&quot; source=&quot;red&quot; target=&quot;spin&quot;&gt;
+          &lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;&gt;
+            &lt;mxPoint x=&quot;400.0&quot; y=&quot;560&quot; as=&quot;sourcePoint&quot; /&gt;
+            &lt;mxPoint x=&quot;400.0&quot; y=&quot;600&quot; as=&quot;targetPoint&quot; /&gt;
+          &lt;/mxGeometry&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;e9&quot; parent=&quot;1&quot; style=&quot;endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;&quot; value=&quot;&quot; edge=&quot;1&quot; source=&quot;spin&quot; target=&quot;pause&quot;&gt;
+          &lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;&gt;
+            &lt;mxPoint x=&quot;400.0&quot; y=&quot;660&quot; as=&quot;sourcePoint&quot; /&gt;
+            &lt;mxPoint x=&quot;400.0&quot; y=&quot;700&quot; as=&quot;targetPoint&quot; /&gt;
+          &lt;/mxGeometry&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;e10&quot; parent=&quot;1&quot; style=&quot;endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;&quot; value=&quot;&quot; edge=&quot;1&quot; source=&quot;pause&quot; target=&quot;wall&quot;&gt;
+          &lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;&gt;
+            &lt;Array as=&quot;points&quot;&gt;
+              &lt;mxPoint x=&quot;230&quot; y=&quot;725&quot; /&gt;
+              &lt;mxPoint x=&quot;230&quot; y=&quot;385&quot; /&gt;
+            &lt;/Array&gt;
+            &lt;mxPoint x=&quot;320&quot; y=&quot;725.0&quot; as=&quot;sourcePoint&quot; /&gt;
+            &lt;mxPoint x=&quot;310&quot; y=&quot;385.0&quot; as=&quot;targetPoint&quot; /&gt;
+          &lt;/mxGeometry&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;e10-label&quot; parent=&quot;e10&quot; vertex=&quot;1&quot; connectable=&quot;0&quot; style=&quot;edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;&quot; value=&quot;check again&quot;&gt;
+          &lt;mxGeometry x=&quot;0&quot; relative=&quot;1&quot; as=&quot;geometry&quot; /&gt;
+        &lt;/mxCell&gt;
+      &lt;/root&gt;
+    &lt;/mxGraphModel&gt;
+  &lt;/diagram&gt;
+&lt;/mxfile&gt;">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 L3,5 Z" fill="#000000"/></marker></defs>
+<rect x="210" y="0" width="650" height="770" fill="#ffffff"/>
+<g font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#000000">
+<rect x="320.0" y="20.0" width="160.0" height="60.0" rx="10" fill="#d5e8d4" stroke="#82b366"/>
+<g font-weight="bold">
+<text x="400.0" y="42.8" text-anchor="middle" dominant-baseline="central">START</text>
+<text x="400.0" y="57.2" text-anchor="middle" dominant-baseline="central">(robot turns on)</text>
+</g>
+<rect x="300.0" y="120.0" width="200.0" height="60.0" rx="0" fill="#dae8fc" stroke="#6c8ebf"/>
+<text x="400.0" y="142.8" text-anchor="middle" dominant-baseline="central">Get ready:</text>
+<text x="400.0" y="157.2" text-anchor="middle" dominant-baseline="central">flash the lights</text>
+<rect x="300.0" y="220.0" width="200.0" height="60.0" rx="0" fill="#dae8fc" stroke="#6c8ebf"/>
+<text x="400.0" y="235.6" text-anchor="middle" dominant-baseline="central">Look for fire</text>
+<text x="400.0" y="250.0" text-anchor="middle" dominant-baseline="central">(only reports it,</text>
+<text x="400.0" y="264.4" text-anchor="middle" dominant-baseline="central">doesn&#x27;t act yet)</text>
+<path d="M400.0,320.0 L490.0,385.0 L400.0,450.0 L310.0,385.0 Z" fill="#fff2cc" stroke="#d6b656"/>
+<text x="400.0" y="377.8" text-anchor="middle" dominant-baseline="central">Is something</text>
+<text x="400.0" y="392.2" text-anchor="middle" dominant-baseline="central">closer than 10 cm?</text>
+<rect x="580.0" y="355.0" width="180.0" height="60.0" rx="0" fill="#dae8fc" stroke="#6c8ebf"/>
+<text x="670.0" y="377.8" text-anchor="middle" dominant-baseline="central">Light off,</text>
+<text x="670.0" y="392.2" text-anchor="middle" dominant-baseline="central">drive forward</text>
+<rect x="580.0" y="460.0" width="180.0" height="50.0" rx="0" fill="#dae8fc" stroke="#6c8ebf"/>
+<text x="670.0" y="477.8" text-anchor="middle" dominant-baseline="central">Keep driving for</text>
+<text x="670.0" y="492.2" text-anchor="middle" dominant-baseline="central">a tenth of a second</text>
+<rect x="310.0" y="510.0" width="180.0" height="50.0" rx="0" fill="#f8cecc" stroke="#b85450"/>
+<text x="400.0" y="527.8" text-anchor="middle" dominant-baseline="central">Warning light!</text>
+<text x="400.0" y="542.2" text-anchor="middle" dominant-baseline="central">Stop, wait 1 second</text>
+<rect x="300.0" y="600.0" width="200.0" height="60.0" rx="0" fill="#dae8fc" stroke="#6c8ebf"/>
+<text x="400.0" y="622.8" text-anchor="middle" dominant-baseline="central">Turn right for a</text>
+<text x="400.0" y="637.2" text-anchor="middle" dominant-baseline="central">surprise amount of time</text>
+<rect x="320.0" y="700.0" width="160.0" height="50.0" rx="0" fill="#dae8fc" stroke="#6c8ebf"/>
+<text x="400.0" y="717.8" text-anchor="middle" dominant-baseline="central">Stop, wait</text>
+<text x="400.0" y="732.2" text-anchor="middle" dominant-baseline="central">half a second</text>
+<path d="M400.0,80.0 L400.0,120.0" fill="none" stroke="#000000" marker-end="url(#arrow)"/>
+<path d="M400.0,180.0 L400.0,220.0" fill="none" stroke="#000000" marker-end="url(#arrow)"/>
+<path d="M400.0,280.0 L400.0,320.0" fill="none" stroke="#000000" marker-end="url(#arrow)"/>
+<path d="M490.0,385.0 L580.0,385.0" fill="none" stroke="#000000" marker-end="url(#arrow)"/>
+<path d="M670.0,415.0 L670.0,460.0" fill="none" stroke="#000000" marker-end="url(#arrow)"/>
+<path d="M760.0,485.0 L840.0,485.0 L840.0,250.0 L500.0,250.0" fill="none" stroke="#000000" marker-end="url(#arrow)"/>
+<path d="M400.0,450.0 L400.0,510.0" fill="none" stroke="#000000" marker-end="url(#arrow)"/>
+<path d="M400.0,560.0 L400.0,600.0" fill="none" stroke="#000000" marker-end="url(#arrow)"/>
+<path d="M400.0,660.0 L400.0,700.0" fill="none" stroke="#000000" marker-end="url(#arrow)"/>
+<path d="M320.0,725.0 L230.0,725.0 L230.0,385.0 L310.0,385.0" fill="none" stroke="#000000" marker-end="url(#arrow)"/>
+<rect x="525.8" y="376.8" width="18.4" height="16.4" fill="#ffffff"/>
+<text x="535.0" y="385.0" text-anchor="middle" dominant-baseline="central">NO</text>
+<rect x="691.2" y="241.8" width="76.0" height="16.4" fill="#ffffff"/>
+<text x="729.2" y="250.0" text-anchor="middle" dominant-baseline="central">start over</text>
+<rect x="387.2" y="471.8" width="25.6" height="16.4" fill="#ffffff"/>
+<text x="400.0" y="480.0" text-anchor="middle" dominant-baseline="central">YES</text>
+<rect x="188.4" y="551.8" width="83.2" height="16.4" fill="#ffffff"/>
+<text x="230.0" y="560.0" text-anchor="middle" dominant-baseline="central">check again</text>
+</g></svg>
